@@ -78,6 +78,8 @@ More than a portfolio piece. More than a tech demo. This is a book for him, from
 
 No backend. No API. No accounts. This is a book, not an app. The only thing running is the page flip.
 
+<img src="public/images/bruce-standing-side.webp" alt="Bruce" align="right" height="160" vspace="20" hspace="0" />
+
 | What | How |
 |---|---|
 | The bones | React 18 via Vite |
