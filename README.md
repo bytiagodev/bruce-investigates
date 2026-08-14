@@ -1,6 +1,6 @@
-<img src="public/images/banner.webp" alt="Bruce Investigates" width="100%" />
-
-<br />
+<p align="center">
+  <img src="public/images/banner.webp" alt="Bruce Investigates" width="100%" />
+</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/case_status-open-c8a96e?style=for-the-badge&labelColor=2c1810" />
@@ -8,100 +8,53 @@
   <img src="https://img.shields.io/badge/verdict-treats_were_hidden-c8a96e?style=for-the-badge&labelColor=2c1810" />
 </p>
 
-<br />
-
 <h1 align="center">Bruce Investigates</h1>
-<p align="center"><em>A digital children's picture book about a very serious pug on a very important case.</em></p>
-
+<p align="center"><em>A digital picture book about a very serious pug on a very important case.</em></p>
 
 <p align="center">
   <a href="https://bytiagodev.github.io/bruce-investigates/">Read the book</a>
 </p>
 
-<br />
-
 ---
 
-## The Case
+## The story
 
-The owners left this morning. Bruce is home alone.
-
-What follows is a thorough, professional, and completely serious investigation. Bruce takes himself very seriously. The stakes, it must be said, are not serious at all.
-
-> *"He was given a treat. It was fine. It was not enough."*
-
-<br />
+Bruce is my pug. When the house is empty, he takes his job as the head of security very seriously. This is a short digital picture book about what happens when he realizes the treat jar has been moved and the owners are the prime suspects. 
 
 <p align="center">
   <img src="public/images/bruce-standing-left.webp" alt="Bruce on the case" height="180" />
 </p>
 
-<br />
+## The book
 
----
+It is a 13-page digital picture book. I wrote the story and put together the illustrations, keeping the camera angles low to match how Bruce actually sees the world. You can read it in English or Portuguese. 
 
-## The Book
-
-13 spreads and a cover. Each page is a full 16:9 painted illustration with sparse text overlay. Warm domestic interiors, low camera angles, and an earthy muted palette create a world that feels slightly oversized from Bruce's perspective.
-
-The comedy comes from Bruce taking himself completely seriously throughout. His expression barely changes. The chaos accumulates behind him and he never looks at it.
-
-Choose your language, start the investigation and turn pages by clicking, dragging, or using the arrow keys. On mobile, tap the edges.
-
-<br />
+The pages turn by clicking, dragging, or using the arrow keys, and it works just as well on mobile by tapping the edges of the screen.
 
 <p align="center">
   <img src="public/images/bruce-sitting-left.webp" alt="Bruce" height="160" />
 </p>
 
-<br />
-
----
-
 ## About Bruce
 
-<p align="right">
-  <img src="public/images/bruce-sitting-right.webp" alt="Bruce" height="180" align="right" />
+<p align="center">
+  <img src="public/images/bruce-sitting-right.webp" alt="Bruce" height="180" />
 </p>
 
-Bruce is a real pug.
+Bruce is my actual dog. As coding became a bigger part of my life, I wanted him to be represented in the things I make. This repository is for him more than anything else. If other people find enjoyment in it, that is great, but mostly it is just a little project to celebrate a very good boy.
 
-This book exists because as coding became a bigger part of my life, I wanted Bruce to be part of it too, represented somewhere in the things I make. The repo is for him more than anything else. If other people find enjoyment in it, that is great. I am sure Bruce would be happy to know he made someone smile. He has always been more than happy to make others smile alongside him.
+## How it is built
 
-More than a portfolio piece. More than a tech demo. This is a book for him, from him.
+<p align="center">
+  <img src="public/images/bruce-standing-side.webp" alt="Bruce" height="160" />
+</p>
 
-<br />
-
----
-
-## Under the Hood
-
-No backend. No API. No accounts. This is a book, not an app. The only thing running is the page flip.
-
-<img src="public/images/bruce-standing-side.webp" alt="Bruce" align="right" height="160" vspace="20" hspace="0" />
-
-| What | How |
-|---|---|
-| The bones | React 18 via Vite |
-| The page turn | react-pageflip |
-| The transitions | Framer Motion |
-| The style | Tailwind CSS |
-| The home | GitHub Pages |
-
-<br />
-
----
+There is no backend and no database. It is just a static site hosted on GitHub Pages. I used React and Vite to build it, `react-pageflip` to handle the actual book mechanics, and Framer Motion for the page transitions. Styling is handled by Tailwind CSS.
 
 ## Credits
 
-| | |
-|---|---|
-| Concept, writing, and build | [bytiagodev](https://github.com/bytiagodev) |
-| Bruce | for being a lovely and loyal boy who never fails to brighten my day |
-
-<br />
-
----
+Concept, writing, and build by [bytiagodev](https://github.com/bytiagodev).
+Bruce, for being a lovely and loyal boy who never fails to brighten my day.
 
 <p align="center">
   <img src="public/images/bruce-sitting-front.webp" alt="Bruce" height="140" />
