@@ -10,14 +10,12 @@ const Spread = forwardRef(({ spread, language }, ref) => {
       className="relative w-full h-full overflow-hidden bg-black"
       style={{ containerType: 'inline-size' }}
     >
-      {/* Illustration */}
       <img
         src={spread.image}
-        alt={`Spread ${spread.id}`}
+        alt={spread.alt[language]}
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Text block with gradient backdrop */}
       <div
         className="absolute left-0 right-0 bottom-0"
         style={{
