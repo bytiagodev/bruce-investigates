@@ -17,11 +17,10 @@ export default function LanguageSelect({ onSelect }) {
       >
         <img
           src={asset('images/language-select.webp')}
-          alt="Choose your language — Bruce sits between a British flag and a Portuguese flag"
+          alt="Bruce sits between a British flag and a Portuguese flag"
           className="absolute inset-0 w-full h-full object-contain"
         />
 
-        {/* English flag button — left flag */}
         <button
           onClick={() => onSelect('en')}
           className="absolute flag-btn cursor-pointer"
@@ -34,7 +33,6 @@ export default function LanguageSelect({ onSelect }) {
           aria-label="Read in English"
         />
 
-        {/* Portuguese flag button — right flag */}
         <button
           onClick={() => onSelect('pt')}
           className="absolute flag-btn cursor-pointer"
@@ -47,7 +45,6 @@ export default function LanguageSelect({ onSelect }) {
           aria-label="Ler em Português"
         />
 
-        {/* Hint text */}
         <p
           className="absolute bottom-2 left-0 right-0 text-center pointer-events-none"
           style={{

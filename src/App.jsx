@@ -7,7 +7,6 @@ import { preloadImages, getAllImageUrls } from './utils/preloader'
 export default function App() {
   const [language, setLanguage] = useState(null)
 
-  // Preload all book images as soon as the app mounts
   useEffect(() => {
     preloadImages(getAllImageUrls())
   }, [])

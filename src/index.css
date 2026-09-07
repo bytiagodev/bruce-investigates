@@ -32,7 +32,7 @@ body {
   paint-order: stroke fill;
 }
 
-/* Book gutter — only applied when .show-gutter class is present */
+/* Book gutter, only applied when .show-gutter class is present */
 .show-gutter {
   position: relative;
 }

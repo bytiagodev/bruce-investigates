@@ -57,6 +57,6 @@ export function playPageTurn() {
     noise.start(now)
     noise.stop(now + duration)
   } catch {
-    // Audio not available — silently fail
+    // Audio not available, silently fail
   }
 }

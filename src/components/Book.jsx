@@ -11,18 +11,18 @@ import { playPageTurn } from '../utils/pageSound'
 
 /*
   Page structure (18 pages total):
-  0  — Front Cover (hard, single)
-  1  — Inside front cover (blank endpaper)
-  2  — Spread 1
+  0  - Front Cover (hard, single)
+  1  - Inside front cover (blank endpaper)
+  2  - Spread 1
   ...
-  14 — Spread 13
-  15 — "The End" / "Fim"
-  16 — Inside back cover (blank endpaper)
-  17 — Back Cover (hard, single)
+  14 - Spread 13
+  15 - "The End" / "Fim"
+  16 - Inside back cover (blank endpaper)
+  17 - Back Cover (hard, single)
 */
 const TOTAL_PAGES = 18
 
-// SVG icons — declared outside render
+// SVG icons, declared outside render
 const ChevronLeft = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="13 4 7 10 13 16" />
@@ -86,12 +86,10 @@ export default function Book({ language }) {
     setIsPortrait(e.data === 'portrait')
   }, [])
 
-  // Sync orientation once the book initialises
   const handleInit = useCallback(() => {
     syncOrientation()
   }, [syncOrientation])
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === 'ArrowRight') goNext()
@@ -170,7 +168,6 @@ export default function Book({ language }) {
         <BackCover />
       </HTMLFlipBook>
 
-      {/* Navigation arrows */}
       <div className="flex gap-6 mt-5">
         {!isFirstPage ? (
           <button
@@ -197,7 +194,6 @@ export default function Book({ language }) {
         )}
       </div>
 
-      {/* Sound toggle */}
       <button
         className="sound-toggle"
         onClick={() => setSoundOn((s) => !s)}
