@@ -12,7 +12,11 @@
 <p align="center"><em>A digital picture book about a very serious pug on a very important case.</em></p>
 
 <p align="center">
-  <a href="https://bytiagodev.github.io/bruce-investigates/">Read the book</a>
+  <a href="https://bytiagodev.github.io/bruce-investigates/">📖 Read the book</a>
+</p>
+
+<p align="center">
+  <a href="https://bytiago.com/">🌐 <strong>bytiago.com</strong> &nbsp;•&nbsp; View my full portfolio</a>
 </p>
 
 ---
@@ -55,6 +59,11 @@ There is no backend and no database. It is just a static site hosted on GitHub P
 
 Concept, writing, and build by [bytiagodev](https://github.com/bytiagodev).
 Bruce, for being a lovely and loyal boy who never fails to brighten my day.
+
+---
+
+### More of my work
+If you enjoyed this project, check out my full portfolio and other experiments at [bytiago.com](https://bytiago.com/).
 
 <p align="center">
   <img src="public/images/bruce-sitting-front.webp" alt="Bruce" height="140" />
