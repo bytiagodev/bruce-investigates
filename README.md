@@ -15,49 +15,48 @@
   <a href="https://bytiagodev.github.io/bruce-investigates/">📖 Read the book</a>
 </p>
 
-<p align="center">
-  <a href="https://bytiago.com/">🌐 <strong>bytiago.com</strong> &nbsp;•&nbsp; View my full portfolio</a>
-</p>
-
 ---
 
-## The story
+## The case
 
-Bruce is my pug. When the house is empty, he takes his job as the head of security very seriously. This is a short digital picture book about what happens when he realizes the treat jar has been moved and the owners are the prime suspects. 
+Bruce is my pug. When the house is empty, he takes his job as head of security very seriously. This is a short digital picture book about what happens when he works out that the treats have been moved and the owners are the prime suspects.
+
+He searches the kitchen floor, the sofa cushions and the cupboard under the sink. Something falls. Bruce did not do that.
 
 <p align="center">
   <img src="public/images/bruce-standing-left.webp" alt="Bruce on the case" height="180" />
 </p>
 
-## The book
+## The evidence
 
-It is a 13-page digital picture book. I wrote the story and put together the illustrations, keeping the camera angles low to match how Bruce actually sees the world. You can read it in English or Portuguese. 
+Thirteen illustrated spreads, plus a cover, endpapers and a closing page, so it opens and closes like a real picture book rather than stopping after the last image. I wrote the story and put the illustrations together, keeping the camera low to match how Bruce actually sees a room.
 
-The pages turn by clicking, dragging, or using the arrow keys, and it works just as well on mobile by tapping the edges of the screen.
+The book opens on a language choice, English or Portuguese, and the whole book follows it. Pages turn by clicking, dragging or using the arrow keys, and by tapping the edges of the screen on a phone. Every turn plays a paper sound that is generated in the browser rather than loaded as a file, so nothing extra is downloaded to make the book feel physical.
 
 <p align="center">
   <img src="public/images/bruce-sitting-left.webp" alt="Bruce" height="160" />
 </p>
 
-## About Bruce
+## The subject
 
 <p align="center">
   <img src="public/images/bruce-sitting-right.webp" alt="Bruce" height="180" />
 </p>
 
-Bruce is my actual dog. As coding became a bigger part of my life, I wanted him to be represented in the things I make. This repository is for him more than anything else. If other people find enjoyment in it, that is great, but mostly it is just a little project to celebrate a very good boy.
+Bruce is my actual dog. As coding became a bigger part of my life, I wanted him to be represented in the things I make. This repository is for him more than anything else. If other people enjoy it, that is a bonus, but mostly it is here to celebrate a very good boy.
 
-## How it is built
+## The paperwork
 
 <p align="center">
   <img src="public/images/bruce-standing-side.webp" alt="Bruce" height="160" />
 </p>
 
-There is no backend and no database. It is just a static site hosted on GitHub Pages. I used React and Vite to build it, `react-pageflip` to handle the actual book mechanics, and Framer Motion for the page transitions. Styling is handled by Tailwind CSS.
+No backend, no database, no accounts. A static site on GitHub Pages, built with React and Vite, with `react-pageflip` handling the book mechanics, Framer Motion handling the transitions, and Tailwind for the styling. Text sizes scale with the rendered page rather than the viewport, so a spread reads the same on a laptop and on a phone.
 
 ## Credits
 
-Concept, writing, and build by [bytiagodev](https://github.com/bytiagodev).
+Concept, writing and build by [bytiagodev](https://github.com/bytiagodev). Everything else I have made is at [bytiago.com](https://bytiago.com/).
+
 Bruce, for being a lovely and loyal boy who never fails to brighten my day.
 
 ---
