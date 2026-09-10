@@ -62,9 +62,6 @@ Bruce, for being a lovely and loyal boy who never fails to brighten my day.
 
 ---
 
-### More of my work
-If you enjoyed this project, check out my full portfolio and other experiments at [bytiago.com](https://bytiago.com/).
-
 <p align="center">
   <img src="public/images/bruce-sitting-front.webp" alt="Bruce" height="140" />
 </p>
