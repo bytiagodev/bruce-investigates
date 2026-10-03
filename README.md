@@ -55,7 +55,7 @@ No backend, no database, no accounts. A static site on GitHub Pages, built with 
 
 ## Credits
 
-Concept, writing, art direction and build by [bytiagodev](https://github.com/bytiagodev). Illustrations generated with AI. Everything else I have made is at [bytiago.com](https://bytiago.com/).
+Concept, writing, art direction and build by [bytiagodev](https://github.com/bytiagodev). Illustrations generated with AI. Everything else I have made is at [bytiago.com](https://bytiago.com/en/).
 
 Bruce, for being a lovely and loyal boy who never fails to brighten my day.
 
