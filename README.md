@@ -29,7 +29,7 @@ He searches the kitchen floor, the sofa cushions and the cupboard under the sink
 
 ## The evidence
 
-Thirteen illustrated spreads, plus a cover, endpapers and a closing page, so it opens and closes like a real picture book rather than stopping after the last image. I wrote the story and put the illustrations together, keeping the camera low to match how Bruce actually sees a room.
+Thirteen illustrated spreads, plus a cover, endpapers and a closing page, so it opens and closes like a real picture book rather than stopping after the last image. I wrote the story and directed the illustrations, which are AI-generated, keeping the camera low to match how Bruce actually sees a room.
 
 The book opens on a language choice, English or Portuguese, and the whole book follows it. Pages turn by clicking, dragging or using the arrow keys, and by tapping the edges of the screen on a phone. Every turn plays a paper sound that is generated in the browser rather than loaded as a file, so nothing extra is downloaded to make the book feel physical.
 
@@ -55,7 +55,7 @@ No backend, no database, no accounts. A static site on GitHub Pages, built with 
 
 ## Credits
 
-Concept, writing and build by [bytiagodev](https://github.com/bytiagodev). Everything else I have made is at [bytiago.com](https://bytiago.com/).
+Concept, writing, art direction and build by [bytiagodev](https://github.com/bytiagodev). Illustrations generated with AI. Everything else I have made is at [bytiago.com](https://bytiago.com/).
 
 Bruce, for being a lovely and loyal boy who never fails to brighten my day.
 
