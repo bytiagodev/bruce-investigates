@@ -1,4 +1,5 @@
 import { asset } from './asset'
+import spreads from '../data/spreads'
 
 /**
  * Preload an array of image URLs.
@@ -19,12 +20,9 @@ export function preloadImages(urls) {
 }
 
 export function getAllImageUrls() {
-  const images = [
+  return [
     asset('images/cover.webp'),
     asset('images/bruce-back.webp'),
+    ...spreads.map((spread) => spread.image),
   ]
-  for (let i = 1; i <= 13; i++) {
-    images.push(asset(`images/spread-${String(i).padStart(2, '0')}.webp`))
-  }
-  return images
 }

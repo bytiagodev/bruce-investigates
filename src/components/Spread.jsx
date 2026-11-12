@@ -1,8 +1,7 @@
 import { forwardRef } from 'react'
 
-const Spread = forwardRef(({ spread, language }, ref) => {
+const Spread = forwardRef(({ spread, language, isLast }, ref) => {
   const lines = spread[language]
-  const isLastSpread = spread.id === 13
 
   return (
     <div
@@ -24,7 +23,7 @@ const Spread = forwardRef(({ spread, language }, ref) => {
         }}
       >
         {lines.map((line, i) => {
-          const isFinalLine = isLastSpread && i === lines.length - 1
+          const isFinalLine = isLast && i === lines.length - 1
 
           return (
             <p

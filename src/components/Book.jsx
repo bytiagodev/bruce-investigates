@@ -10,7 +10,7 @@ import spreads from '../data/spreads'
 import { playPageTurn } from '../utils/pageSound'
 
 /*
-  Page structure (18 pages total):
+  Page structure, with the 13 spreads the book has today (18 pages):
   0  - Front Cover (hard, single)
   1  - Inside front cover (blank endpaper)
   2  - Spread 1
@@ -20,7 +20,8 @@ import { playPageTurn } from '../utils/pageSound'
   16 - Inside back cover (blank endpaper)
   17 - Back Cover (hard, single)
 */
-const TOTAL_PAGES = 18
+// Two covers, two endpapers and the closing page, around the spreads.
+const TOTAL_PAGES = spreads.length + 5
 
 // SVG icons, declared outside render
 const ChevronLeft = () => (
@@ -69,8 +70,9 @@ export default function Book({ language }) {
   const bookRef = useRef(null)
   const [currentPage, setCurrentPage] = useState(0)
   const [soundOn, setSoundOn] = useState(true)
-  // Default to portrait on screens too narrow for two 1076px pages
-  const [isPortrait, setIsPortrait] = useState(() => window.innerWidth < 1200)
+  // The library shows one page below twice its minWidth (560px) and two
+  // from there up. onInit corrects this guess if it is ever wrong.
+  const [isPortrait, setIsPortrait] = useState(() => window.innerWidth < 560)
 
   const getPageFlip = () => bookRef.current?.pageFlip()
 
@@ -107,8 +109,8 @@ export default function Book({ language }) {
 
   useEffect(() => {
     const handleKey = (e) => {
-      if (e.key === 'ArrowRight') goNext()
-      if (e.key === 'ArrowLeft') goPrev()
+      if (e.key === 'ArrowRight') bookRef.current?.pageFlip()?.flipNext()
+      if (e.key === 'ArrowLeft') bookRef.current?.pageFlip()?.flipPrev()
     }
     window.addEventListener('keydown', handleKey)
     return () => window.removeEventListener('keydown', handleKey)
@@ -162,24 +164,29 @@ export default function Book({ language }) {
         onChangeOrientation={handleOrientation}
         autoSize={true}
       >
-        {/* Page 0: Front Cover */}
+        {/* Front Cover */}
         <Cover language={language} />
 
-        {/* Page 1: Inside front cover (blank endpaper) */}
+        {/* Inside front cover (blank endpaper) */}
         <BlankPage />
 
-        {/* Pages 2–14: Spreads 1–13 */}
-        {spreads.map((spread) => (
-          <Spread key={spread.id} spread={spread} language={language} />
+        {/* The spreads, from page 2 on */}
+        {spreads.map((spread, index) => (
+          <Spread
+            key={spread.id}
+            spread={spread}
+            language={language}
+            isLast={index === spreads.length - 1}
+          />
         ))}
 
-        {/* Page 15: The End */}
+        {/* The End */}
         <TheEndPage language={language} />
 
-        {/* Page 16: Inside back cover (blank endpaper) */}
+        {/* Inside back cover (blank endpaper) */}
         <BlankPage />
 
-        {/* Page 17: Back Cover */}
+        {/* Back Cover */}
         <BackCover language={language} />
       </HTMLFlipBook>
 
