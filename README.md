@@ -51,7 +51,7 @@ Bruce is my actual dog. As coding became a bigger part of my life, I wanted him 
   <img src="public/images/bruce-standing-side.webp" alt="Bruce" height="160" />
 </p>
 
-A static site on GitHub Pages, built with React and Vite, with `react-pageflip` handling the book mechanics, Framer Motion handling the transitions and Tailwind for the styling. Text sizes scale with the rendered page rather than the viewport, so a spread reads the same on a laptop and on a phone.
+A static site on GitHub Pages, built with React and Vite, with `react-pageflip` handling the book mechanics, Framer Motion handling the transitions and Tailwind for the styling. Text sizes scale with the rendered page rather than the viewport, with a floor so the words stay legible when the book is drawn small.
 
 ## Credits
 
