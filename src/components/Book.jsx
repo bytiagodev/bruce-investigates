@@ -200,7 +200,7 @@ export default function Book({ language }) {
             <ChevronLeft />
           </button>
         ) : (
-          <div style={{ width: 44 }} />
+          <div className="nav-arrow-spacer" />
         )}
 
         {!isLastPage ? (
@@ -212,7 +212,7 @@ export default function Book({ language }) {
             <ChevronRight />
           </button>
         ) : (
-          <div style={{ width: 44 }} />
+          <div className="nav-arrow-spacer" />
         )}
       </div>
 

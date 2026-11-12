@@ -48,7 +48,6 @@ export default function LanguageSelect({ onSelect }) {
         <p
           className="absolute bottom-2 left-0 right-0 text-center pointer-events-none"
           style={{
-            fontFamily: "'Lora', Georgia, serif",
             fontSize: 'clamp(11px, 1.5vw, 15px)',
             color: 'rgba(255, 253, 245, 0.75)',
             textShadow: '0 1px 4px rgba(0,0,0,0.5)',

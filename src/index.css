@@ -118,12 +118,6 @@ body {
 
 /* The End page */
 .the-end-page {
-  background: linear-gradient(
-    135deg,
-    #F5F0E6 0%,
-    #EDE7D9 50%,
-    #F2EDE3 100%
-  );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,4 +170,34 @@ body {
 .sound-toggle:focus-visible {
   outline: 2px solid #FFFDF5;
   outline-offset: 3px;
+}
+
+/* Fine grain over the cream pages */
+.paper-noise {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+}
+
+/* Worn edge along the spine side of each hard cover */
+.cover-edge {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cover-edge--front {
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.12), inset -3px 0 8px rgba(0, 0, 0, 0.08);
+  border-right: 3px solid rgba(60, 45, 30, 0.25);
+}
+
+.cover-edge--back {
+  box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.12), inset 3px 0 8px rgba(0, 0, 0, 0.08);
+  border-left: 3px solid rgba(60, 45, 30, 0.25);
+}
+
+/* Holds an arrow's place on the covers so the other one does not move */
+.nav-arrow-spacer {
+  width: 44px;
 }

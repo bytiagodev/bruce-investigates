@@ -30,7 +30,6 @@ const Spread = forwardRef(({ spread, language, isLast }, ref) => {
               key={i}
               className="text-center spread-text"
               style={{
-                fontFamily: "'Lora', Georgia, serif",
                 fontWeight: isFinalLine ? 400 : 600,
                 fontStyle: isFinalLine ? 'italic' : 'normal',
                 fontSize: isFinalLine

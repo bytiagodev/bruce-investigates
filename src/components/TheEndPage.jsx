@@ -6,13 +6,12 @@ const TheEndPage = forwardRef(({ language }, ref) => {
   return (
     <div
       ref={ref}
-      className="relative w-full h-full the-end-page"
+      className="relative w-full h-full endpaper the-end-page"
       style={{ containerType: 'inline-size' }}
     >
       <div className="absolute inset-0 flex items-center justify-center">
         <p
           style={{
-            fontFamily: "'Lora', Georgia, serif",
             fontSize: 'clamp(14px, 3cqw, 32px)',
             fontStyle: 'italic',
             fontWeight: 400,
@@ -26,12 +25,7 @@ const TheEndPage = forwardRef(({ language }, ref) => {
       </div>
 
       {/* Subtle paper texture */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-20"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E")`,
-        }}
-      />
+      <div className="paper-noise opacity-20" />
     </div>
   )
 })

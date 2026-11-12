@@ -17,13 +17,7 @@ const Cover = forwardRef(({ language }, ref) => {
       />
 
       {/* Hardcover edge effect */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          boxShadow: 'inset 0 0 40px rgba(0,0,0,0.12), inset -3px 0 8px rgba(0,0,0,0.08)',
-          borderRight: '3px solid rgba(60,45,30,0.25)',
-        }}
-      />
+      <div className="cover-edge cover-edge--front" />
 
       <div
         className="absolute top-0 left-0 right-0 flex flex-col items-center pointer-events-none"

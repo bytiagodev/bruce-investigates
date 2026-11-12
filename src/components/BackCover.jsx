@@ -19,13 +19,7 @@ const BackCover = forwardRef(({ language }, ref) => {
       </div>
 
       {/* Hardcover edge effect */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          boxShadow: 'inset 0 0 40px rgba(0,0,0,0.12), inset 3px 0 8px rgba(0,0,0,0.08)',
-          borderLeft: '3px solid rgba(60,45,30,0.25)',
-        }}
-      />
+      <div className="cover-edge cover-edge--back" />
     </div>
   )
 })
