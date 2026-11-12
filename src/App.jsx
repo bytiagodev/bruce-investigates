@@ -11,6 +11,11 @@ export default function App() {
     preloadImages(getAllImageUrls())
   }, [])
 
+  useEffect(() => {
+    document.documentElement.lang = language ?? 'en'
+    document.title = language === 'pt' ? 'Bruce Investiga' : 'Bruce Investigates'
+  }, [language])
+
   return (
     <div className="w-screen h-screen overflow-hidden bg-neutral-900">
       <AnimatePresence mode="wait">

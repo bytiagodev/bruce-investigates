@@ -50,6 +50,21 @@ const SoundIcon = ({ muted }) => (
   </svg>
 )
 
+const labels = {
+  en: {
+    previous: 'Previous page',
+    next: 'Next page',
+    mute: 'Mute page turn sound',
+    unmute: 'Enable page turn sound',
+  },
+  pt: {
+    previous: 'Página anterior',
+    next: 'Página seguinte',
+    mute: 'Desligar o som das páginas',
+    unmute: 'Ligar o som das páginas',
+  },
+}
+
 export default function Book({ language }) {
   const bookRef = useRef(null)
   const [currentPage, setCurrentPage] = useState(0)
@@ -165,7 +180,7 @@ export default function Book({ language }) {
         <BlankPage />
 
         {/* Page 17: Back Cover */}
-        <BackCover />
+        <BackCover language={language} />
       </HTMLFlipBook>
 
       <div className="flex gap-6 mt-5">
@@ -173,7 +188,7 @@ export default function Book({ language }) {
           <button
             onClick={goPrev}
             className="nav-arrow"
-            aria-label="Previous page"
+            aria-label={labels[language].previous}
           >
             <ChevronLeft />
           </button>
@@ -185,7 +200,7 @@ export default function Book({ language }) {
           <button
             onClick={goNext}
             className="nav-arrow"
-            aria-label="Next page"
+            aria-label={labels[language].next}
           >
             <ChevronRight />
           </button>
@@ -197,7 +212,7 @@ export default function Book({ language }) {
       <button
         className="sound-toggle"
         onClick={() => setSoundOn((s) => !s)}
-        aria-label={soundOn ? 'Mute page turn sound' : 'Enable page turn sound'}
+        aria-label={soundOn ? labels[language].mute : labels[language].unmute}
       >
         <SoundIcon muted={!soundOn} />
       </button>

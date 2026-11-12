@@ -12,7 +12,7 @@ const Cover = forwardRef(({ language }, ref) => {
     >
       <img
         src={asset('images/cover.webp')}
-        alt={title}
+        alt=""
         className="absolute inset-0 w-full h-full object-cover"
       />
 

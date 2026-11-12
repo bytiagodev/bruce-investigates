@@ -1,13 +1,13 @@
 import { forwardRef } from 'react'
 import { asset } from '../utils/asset'
 
-const BackCover = forwardRef((props, ref) => {
+const BackCover = forwardRef(({ language }, ref) => {
   return (
     <div ref={ref} className="relative w-full h-full back-cover overflow-hidden hard-cover">
       <div className="absolute inset-0 flex items-end justify-center pb-6">
         <img
           src={asset('images/bruce-back.webp')}
-          alt="Bruce walking away"
+          alt={language === 'pt' ? 'Bruce a afastar-se' : 'Bruce walking away'}
           className="object-contain"
           style={{
             height: '70%',
